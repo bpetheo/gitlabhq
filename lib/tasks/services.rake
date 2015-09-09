@@ -41,6 +41,17 @@ DELETE /projects/:id/services/<%= service[:dashed_name] %>
 ```
 
 <% end %>
+
+### Get <%= service[:title] %> service settings
+
+Get <%= service[:title] %> service settings for a project.
+
+```
+GET /projects/:id/services/<%= service[:dashed_name] %>
+
+```
+
+<% end %>
 ERB
 
 namespace :services do
